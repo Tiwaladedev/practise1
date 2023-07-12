@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <title>Iceberg Digital Media.com</title>
+        <script src="https://kit.fontawesome.com/d4354fea95.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Roboto:wght@100&display=swap" rel="stylesheet">
+     </head>
+     <body style="padding-bottom: 1000px;">
+        <style>
+            
+            *{
+                margin:0;
+                padding:0;
+                list-style: none;
+                text-decoration: none;
+                font-family: sans-serif;
+                box-sizing: border-box;
+            }
+            nav{
+                background:#a0002d;
+                padding: 0 2%;
+                position: fixed;
+            }
+            label.logo{
+                line-height: 80px;
+            }
+            .logo img{
+                width: 10%;
+                cursor: pointer;
+            }
+            nav ul{
+                float:right;
+                margin-right: 20px;
+
+            }
+            nav ul li{
+                display:inline-block;
+                line-height: 80px;
+                margin:0 5px;
+            }
+            nav ul li a{
+                color:white;
+                font-size: 16px;
+                font-weight:700;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+
+            }
+            a.active, a:hover{
+                background:white;
+                color:red;
+                transition:2s;
+            }
+                .name{
+                font-weight: 100; 
+                padding-top: 100px;
+                padding-left: 60px;
+                padding-bottom: 0px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 45px;
+                }
+                .job-title1{
+                font-weight: 100; 
+                padding-left: 60px;
+                padding-bottom: 0px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 45px;
+                color: #C70039;
+                }
+                .Pics img{
+                    width: 500px;
+                    height: 500px;
+                    
+                    cursor: pointer;
+                    padding-top: 100px;
+                    
+                }
+                .Pics img:hover{
+                    transform:scale(1.04);
+                }
+                .Div1{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    cursor: pointer;
+                    line-height: 50px;
+                }
+                .Tiwa img{
+                    width: 300px;
+                    height: 300px;
+                    object-fit: cover;
+                    cursor: pointer;
+                    border-radius: 80px;
+                 
+                                        
+                }
+                .Tiwa img:hover{
+                    transform:scale(1.04);
+                }
+                .icons{
+                    padding-left: 60px;
+                    padding-top: 0px;
+                    font-size: 20px;
+                }
+                .About{
+                    padding-left: 60px;
+                }
+                .Div2{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    padding-top: 70px;
+                    padding-left: 60px;
+                    background-color:rgba(221,214,254,.9);
+                }
+                .About2{
+                    font-size: 50px;
+                    color:#a0002d;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    
+                }
+                .About3{
+                    font-size: 20px;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    line-height: 30px;
+                }
+                .items{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 30px 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 30px;
+                }
+                .item img{
+                width:100%;
+                height:300px;
+                object-fit: cover;
+                cursor: pointer;
+                
+                }
+                .item img:hover{
+            transform: scale(1.04);
+           }
+           .item button{
+            padding: 5px 30px ;
+            border: none;
+            outline: none ;
+            background-color: green ;
+            color:white ;
+            cursor:pointer ;
+            border-radius:10px ;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+
+           }
+           .item h4{
+            padding: 5px;
+            text-align: center;
+           }
+           .item button:hover{
+            transform: scale(1.04);
+           }
+           .services h1{
+            font-size: 50px;
+            text-align: center;
+            padding-top: 30px;
+            color:whitesmoke;
+            background-color:#a0002d;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+           }
+                  @media only screen and (min-width: 600px) {
+                    .menu{
+                       width: 100%;
+                        
+                        margin: 0 auto;
+                    }
+                    .Div1{
+                   padding: 20px 0px 0px;
+                  }
+                  .Div2{
+                    padding: 20px 0px 0px;
+                  }
+                  .items{
+                    padding-top: 30px 0px 0px;
+                    display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                  }
+                  .About3 p{
+                    padding:30px 0px 0px; ;
+                    object-fit: cover;
+                  }
+                }
+                .Section3{
+                    display: flex;
+                    align-items: center;
+                    padding: 40px;
+                    text-align: center;
+                    object-fit: cover;
+                    
+                    box-shadow: 10px 10px 10px  rgb(113 108 108 / 53%);
+                    margin: auto;
+                }
+                .Service-section{
+                    padding-right: 200px;
+                    padding-left: 60px;
+                    background-color: rgb(230, 237, 241);
+                    height: 250px;
+                }
+                .Service-section h1{
+                    font-size: 30px;
+                    font-weight: 200;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    line-height: 1.6;
+                    color: #a0002d;
+                }
+                    
+                    .P-services{
+                    line-height: 1.6;
+                    font-size: 15px;
+                    padding: 40px;
+                    font-family:  sans-serif;
+                    background-color: rgb(203, 229, 229);
+                    height: 250px;
+
+                }
+                .style-p{
+                    padding-top: 20px;
+                    font-size: 15px;
+                    font-weight: 200;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                }
+                .t-s{
+                    text-align: center;
+                    padding-top: 40px;
+                    
+              }
+              .t-s h3{
+                    font-size: 20px;
+                 
+                    font-family: 'Franklin Gothic Medium';
+                    background-color: green ;
+                    color:white ;
+                    cursor:pointer ;
+                    padding-left: 0.7%;
+                    padding-right: 0.7%;
+                    display: inline-block;
+                   object-fit: cover;
+                   
+              }
+              .t-s h1{
+                font-size: 30px;
+             
+                font-family: 'Franklin Gothic Medium';
+                color: #a0002d;
+                cursor: pointer;
+                
+              }
+              .testimonials{
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               background-color:rgba(221,214,254,.9);
+               padding: 20px;
+               cursor: pointer;
+               margin-left: 40px;
+               margin-right: 40px;
+               
+              }
+              .testimonials4{
+                padding: 40px;
+                margin: auto;
+              }
+              .card-tests img{
+                height: 280px;
+                padding-left:100px;
+                box-shadow: 5px 10px 10px  rgb(113 108 108 / 53%);
+              }
+                .card-tests img:hover{
+                    transform:scale(1.04);
+                }
+                
+              
+              .card-tests2 img{
+                height: 280px;
+                padding-left:100px;
+                box-shadow: 5px 10px 10px  rgb(113 108 108 / 53%);
+                
+              }
+              .card-tests2 img:hover{
+                    transform:scale(1.04);
+                }
+              .card-tests3 img{
+                height: 280px;
+                padding-left:100px;
+                box-shadow: 5px 10px 10px  rgb(113 108 108 / 53%);
+                
+              }
+              .card-tests3 img:hover{
+                    transform:scale(1.04);
+                }
+                .flex{
+                    background-color:#a0002d;
+                    padding: 7px 40px;
+                    color: white;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .call h1{
+                    padding: 10px 60px;
+                    font-size: 20px;
+                }
+                .point-schedule{
+                    color:#a0002d;
+                    background-color: white;
+                    font-size: 16px;
+                    font-weight:700;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                }
+                .point-schedule:hover{
+                    color:white;
+                    background-color: #a0002d;
+                    transition:2s;
+                }
+                .mission img{
+                 width: 25%;
+                cursor: pointer;
+                
+                }
+                .Logo-Logo2{
+                display:flex;
+                flex-direction: row;
+               justify-content: space-between;
+               padding-top: 5%;
+               
+              
+               
+                }
+                .mission{
+                    font-size: 16px;
+                    font-weight:100;
+                    padding: 7px 13px;
+                    line-height: 1.5;
+                    font-family: sans-serif;
+              
+                }
+                .mission2{
+                    font-size: 16px;
+                    font-weight:100;
+                    padding: 7px 13px;
+                    font-family: sans-serif;
+                    line-height: 1.5;
+                    background-color: blue;
+                }
+                .mission2 .icons{
+                    padding: 0 5px;
+                }
+        </style>
+       
+       <nav>
+        <label class="logo"><img src="Pictures/ice.png"></label>
+        <ul>
+            <li><a class="active" href="#">Contact: +234 802 309 3704</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+    </nav>
+        
+        <div class="Div1">
+            <div class="details">
+            <h1 class="name">Hi, I'm Tiwalade</h1>
+            <h1 class="job-title1">Graphics Designer & <br>
+                Branding Expert
+                </h1>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                         </div>
+        </div>
+        <div class="Pics">
+            <img src="Pictures/coder_rcdakb.gif">
+        </div>
+    </div>
+    <div class="Div2">
+        <div class="Tiwa">
+            <img src="Pictures/tiwa.png.png">
+        </div>
+        <div class="About">
+            <h1 class="About2">About Me</h1>
+            <p class="About3">
+                Hi there! I'm Olunowo Tiwalade, a Graphic designer<br>
+                with over 10 years of experience in the field. <br>
+                I have extensive experience designing logos, websites,<br>
+                E fliers, Branding and Printing, and more.<br>
+                If you need a fresh look for your brand or just want <br>
+                to refresh your site design, I'm here to help!<br>
+                </p>
+        </div>
+        
+    </div>
+    <div class="services">
+        <h1>
+            Our Services
+        </h1>
+    </div>
+    <section class="items">
+        <div class="item">
+         <img class="images" src="Pictures/jotter.png">
+         <h4>Soft Cover Jotter</h4>   
+         <button>Order</button>
+         </div>
+         <div class="item">
+            <img class="images" src="Pictures/Wedding Invites.png">
+            <h4>Wedding Invites</h4>   
+            <button>Order</button>
+        </div>
+        <div class="item">
+             <img class="images" src="Pictures/paper tag.png">
+            <h4>Cloth Tag</h4>   
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img class="images"  src="Pictures/Pen.png">
+            <h4>Branded Pen</h4>   
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img class="images"  src="Pictures/Logo2.png">
+            <h4>Logo Design</h4>   
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img class="images" src="Pictures/Sticker.png">
+            <h4>Sticker</h4>   
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img class="images" src="Pictures/paper Bag2.png">
+            <h4>Paper Bag</h4>   
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img class="images" src="Pictures/paper bag3.png">
+            <h4>Paper Bag</h4>   
+            <button>Paper Bag</button>
+        </div>
+        <div class="item">
+            <img class="images" src="Pictures/Business Card4.png">
+            <h4>Business Card</h4>   
+            <button>Order</button>
+        </div>
+         
+    </section>
+        <div class="Section3">
+            <div class="Service-section">
+                <h1>
+                    Send a Dm today and get <br>
+                    Top Notch & Quality Prints 😊<br>
+                 </h1>
+                 </div>
+                 <div class="P-services">
+                 <p>
+                    📌 Business Cards
+                    📌 Fliers
+                    📌 Stickers<br>
+                    📌 Wedding Invites
+                    📌 Packaging Boxes
+                    📌 Branded Nylons<br>
+                    📌 Logos & E fliers
+                    📌 Souvenirs & Lots more<br>
+                    </p>
+                    <p class="style-p">
+                    Duration: 8/10 working days
+                    after design approval<br>
+                    Nationwide Delivery<br>
+                    To order send a dm or
+                    Call<br> 08023093704
+                    </p>
+                    
+                 </div> 
+                 </div>   
+                 <div class="testimonials4">
+            <div class="t-s">
+                <h3>Reviews</h3>
+                <h1>What Our Clients Say</h1>
+            </div>
+            
+           <div class="testimonials">
+            <div class="card-tests">
+                <img src="Pictures/Review (1).png">
+                  
+            </div>
+            <div class="card-tests2">
+                <img src="Pictures/Review (2).png">
+                  
+            </div>
+            <div class="card-tests3">
+                <img src="Pictures/Review (3).png" alt="Review">
+                  
+            </div>
+            
+            </div>
+        </div>
+
+            </section>  
+     </body>
+     <div class="flex">
+        <div class="call">
+            <h1>
+                ☎️ Call Today<br/>
+                 08023093704 <br>
+                 For More Enquiries.
+            </h1>
+        </div>
+        <div class="call">
+        <h1>
+            Lagos,Nigeria.
+        </h1>
+        </div>
+        <div class="call">
+            <h1>
+                SCHEDULE AN <br>
+                APPOINTMENT
+            </h1>
+            </div>
+            <div class="Schedule">
+                <a class="point-schedule" href="#">Schedule Now</a>
+            </div>
+     </div>
+     <div class="Logo-Logo2">
+    <div class="mission">
+        <img src="Pictures/ice2.png">
+        <p>
+            Our mission is to surpass our client's expectations<br> on every project with superior quality, <br>
+            service and value. <br>We treat every customer with sincerity, fairness and <br> professionalism while
+            delivering a quality product in<br> a timely manner.   
+        </p>
+        </div>
+        <div class="mission2">
+            <p>
+            Our goal is to provide our clients with the highest quality printing,duplicating <br>
+            and graphic design services available today, in the fastest, most economical way possible. <br>
+            In doing so, we will create long-lasting, mutually beneficial relationships.
+            Thank you for your <br>continuous Patronage
+        </p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                     </div>
+        
+        </div>
+        
+     </div>
+     </html>
